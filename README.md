@@ -5,7 +5,7 @@ Repositório com meus estudos da linguagem **Java**, organizado por aulas. Aqui 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/status-em%20andamento-brightgreen?style=for-the-badge" alt="Status" />
-  <img src="https://img.shields.io/badge/aulas-5-blue?style=for-the-badge" alt="Aulas" />
+  <img src="https://img.shields.io/badge/aulas-6-blue?style=for-the-badge" alt="Aulas" />
 </p>
 
 ---
@@ -22,7 +22,8 @@ EstudoJava/
 ├── Aula02/   → Tipos primitivos, casting e variáveis
 ├── Aula03/   → Prática com variáveis e concatenação de strings
 ├── Aula04/   → Operadores aritméticos, relacionais, lógicos e de atribuição
-└── Aula05/   → Condicionais, operador ternário e switch
+├── Aula05/   → Condicionais, operador ternário e switch
+└── Aula06/   → Estruturas de repetição (while, do-while, for)
 ```
 
 ## 📚 Conteúdo por pasta
@@ -80,6 +81,19 @@ Estruturas de decisão: `if`/`else`, `if`/`else if`/`else`, operador ternário e
 | [Aula05pt4.java](Aula05/Aula05pt4.java) | `switch`/`case` para dia da semana e verificação de sexo |
 | [Aula05pt4Ex.java](Aula05/Aula05pt4Ex.java) | Exercício: dia útil vs. fim de semana com `switch`, incluindo *fallthrough* de `case` |
 
+---
+
+### 📁 [Aula06](Aula06/) — Estruturas de repetição
+
+Laços de repetição `while`, `do`/`while` e `for`, além de exercícios aplicando a palavra-chave `break` para interromper o laço quando uma condição é atingida.
+
+| Arquivo | Descrição |
+|---|---|
+| [Aula06.java](Aula06/Aula06.java) | Introdução a `while`, `do`/`while` e `for`, imprimindo uma contagem de 0 a 10 em cada estrutura |
+| [Aula06Ex.java](Aula06/Aula06Ex.java) | Exercício: impressão de todos os números pares de 0 a 100 usando `for` e o operador `%` |
+| [Aula06Ex2.java](Aula06/Aula06Ex2.java) | Exercício: impressão dos números até um valor dado, interrompendo o laço com `break` ao passar de 25 |
+| [Aula06Ex3.java](Aula06/Aula06Ex3.java) | Exercício: cálculo do número de parcelas de um carro até que o valor da parcela atinja o mínimo de R$1000, usando `for` e `break` |
+
 ## 🚀 Como executar
 
 Certifique-se de ter o **JDK** instalado ([Adoptium Temurin](https://adoptium.net/) ou similar).
@@ -107,7 +121,7 @@ java -cp Aula05 Aula05pt4Ex
 
 ## 🗺️ Próximos passos
 
-- [ ] Laços de repetição (`for`, `while`, `do-while`)
+- [x] Laços de repetição (`for`, `while`, `do-while`)
 - [ ] Arrays e Strings avançado
 - [ ] Programação Orientada a Objetos (classes, atributos, métodos, construtores)
 - [ ] Encapsulamento, herança e polimorfismo
