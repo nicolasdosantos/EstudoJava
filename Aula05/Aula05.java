@@ -3,8 +3,11 @@ public class Aula05 {
         int idade = 15;
         boolean isAutorizadoComprarBebida = idade >= 18;
         // !
-        if (isAutorizadoComprarBebida) {
+        
+        if (isAutorizadoComprarBebida == false){ 
             System.out.println("Autorizado a comprar bebida alcólica");
+        }else{
+            System.out.println("Não autorizo a comprar bebeida alcólica! ");
         }
 
         if(!isAutorizadoComprarBebida){
