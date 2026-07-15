@@ -2,33 +2,83 @@
 
 Repositório com meus estudos da linguagem **Java**, organizado por aulas. Aqui documento minha evolução, do básico da linguagem até tópicos mais avançados, com exemplos práticos e comentados.
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/status-em%20andamento-brightgreen?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/aulas-5-blue?style=for-the-badge" alt="Aulas" />
+</p>
+
+---
+
 ## 📌 Sobre
 
-Este projeto tem como objetivo registrar meu aprendizado em Java de forma incremental. Cada pasta representa uma aula, contendo um arquivo `.java` com exemplos práticos e comentários explicando os conceitos estudados.
+Este projeto tem como objetivo registrar meu aprendizado em Java de forma incremental. **Cada pasta representa uma aula**, contendo um ou mais arquivos `.java` com exemplos práticos e comentários explicando os conceitos estudados.
 
 ## 🗂️ Estrutura do repositório
 
 ```
 EstudoJava/
+├── Aula01/   → Primeiro programa e sintaxe básica
 ├── Aula02/   → Tipos primitivos, casting e variáveis
 ├── Aula03/   → Prática com variáveis e concatenação de strings
 ├── Aula04/   → Operadores aritméticos, relacionais, lógicos e de atribuição
 └── Aula05/   → Condicionais, operador ternário e switch
 ```
 
-## 📚 Conteúdo por aula
+## 📚 Conteúdo por pasta
 
-| Aula | Tópico | Descrição |
-|------|--------|-----------|
-| [Aula02](Aula02/Aula02.java) | Tipos primitivos | `int`, `long`, `double`, `float`, `byte`, `short`, `boolean`, `char`, `String` e casting |
-| [Aula03](Aula03/Aula03.java) | Prática | Exercício aplicando variáveis e concatenação de strings |
-| [Aula04](Aula04/Aula04.java) | Operadores | Aritméticos, relacionais, lógicos, de atribuição e incremento/decremento |
-| [Aula05](Aula05/Aula05.java) | Condicionais (`if`/`else`) | Estrutura básica de decisão e operador de negação `!` |
-| [Aula05Ex](Aula05/Aula05Ex.java) | Exercício - if/else | Cálculo de imposto por faixa salarial |
-| [Aula05pt2](Aula05/Aula05pt2.java) | `if`/`else if`/`else` | Classificação por categoria de idade (infantil/juvenil/adulta) |
-| [Aula05pt3](Aula05/Aula05pt3.java) | Operador ternário | Reescrevendo um `if`/`else` com `condição ? valorA : valorB` |
-| [Aula05pt4](Aula05/Aula05pt4.java) | `switch` | Dia da semana e verificação de sexo com `switch`/`case` |
-| [Aula05pt4Ex](Aula05/Aula05pt4Ex.java) | Exercício - switch | Dia útil vs. fim de semana, incluindo fallthrough de `case` |
+### 📁 [Aula01](Aula01/) — Primeiro programa
+
+Introdução à sintaxe do Java: estrutura de uma classe, método `main` e saída no console.
+
+| Arquivo | Descrição |
+|---|---|
+| [Aula01.java](Aula01/Aula01.java) | Programa clássico "Hello World" com `System.out.println` |
+
+---
+
+### 📁 [Aula02](Aula02/) — Tipos primitivos e variáveis
+
+Tipos primitivos (`int`, `long`, `double`, `float`, `byte`, `short`, `boolean`, `char`), a diferença entre tipos primitivos e tipo de referência (`String`), *casting* de valores e inferência de tipo com `var`.
+
+| Arquivo | Descrição |
+|---|---|
+| [Aula02.java](Aula02/Aula02.java) | Declaração dos tipos primitivos, *casting* de `long` para `int` (com perda de precisão), `String` como tipo de referência e uso de `var` |
+
+---
+
+### 📁 [Aula03](Aula03/) — Prática com variáveis e strings
+
+Exercício de fixação da Aula02, aplicando variáveis de diferentes tipos em uma concatenação de `String` mais elaborada.
+
+| Arquivo | Descrição |
+|---|---|
+| [Aula03.java](Aula03/Aula03.java) | Concatenação de `String`, `double` e texto formando uma frase (declaração de recebimento de salário) |
+
+---
+
+### 📁 [Aula04](Aula04/) — Operadores
+
+Operadores aritméticos, relacionais, lógicos, de atribuição e de incremento/decremento.
+
+| Arquivo | Descrição |
+|---|---|
+| [Aula04.java](Aula04/Aula04.java) | Operadores aritméticos (`+ - * / %`), relacionais (`< > <= >= == !=`), lógicos (`&& \|\| !`), de atribuição (`+= -= *= /= %=`) e incremento/decremento (`++ --`), incluindo diferença entre pré e pós-incremento |
+
+---
+
+### 📁 [Aula05](Aula05/) — Condicionais, ternário e switch
+
+Estruturas de decisão: `if`/`else`, `if`/`else if`/`else`, operador ternário e `switch`/`case`, com exercícios práticos de faixa salarial, categoria por idade e dia da semana.
+
+| Arquivo | Descrição |
+|---|---|
+| [Aula05.java](Aula05/Aula05.java) | `if`/`else` básico e operador de negação `!` |
+| [Aula05Ex.java](Aula05/Aula05Ex.java) | Exercício: cálculo de imposto por faixa salarial com `if`/`else if`/`else` |
+| [Aula05pt2.java](Aula05/Aula05pt2.java) | Classificação por categoria de idade (infantil / juvenil / adulta) com `if`/`else if`/`else` |
+| [Aula05pt3.java](Aula05/Aula05pt3.java) | Operador ternário (`condição ? valorA : valorB`) reescrevendo um `if`/`else` |
+| [Aula05pt4.java](Aula05/Aula05pt4.java) | `switch`/`case` para dia da semana e verificação de sexo |
+| [Aula05pt4Ex.java](Aula05/Aula05pt4Ex.java) | Exercício: dia útil vs. fim de semana com `switch`, incluindo *fallthrough* de `case` |
 
 ## 🚀 Como executar
 
@@ -36,13 +86,18 @@ Certifique-se de ter o **JDK** instalado ([Adoptium Temurin](https://adoptium.ne
 
 ```bash
 # Compilar
-javac Aula0X/Aula0X.java
+javac AulaXX/Arquivo.java
 
 # Executar
-java -cp Aula0X Aula0X
+java -cp AulaXX Arquivo
 ```
 
-Substitua `X` pelo número da aula desejada.
+Exemplo prático:
+
+```bash
+javac Aula05/Aula05pt4Ex.java
+java -cp Aula05 Aula05pt4Ex
+```
 
 ## 🎯 Objetivo
 
@@ -58,10 +113,6 @@ Substitua `X` pelo número da aula desejada.
 - [ ] Encapsulamento, herança e polimorfismo
 - [ ] Coleções (`List`, `Map`, `Set`)
 - [ ] Tratamento de exceções (`try`/`catch`)
-
-## 🛠️ Tecnologias
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 
 ## ✍️ Autor
 
