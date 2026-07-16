@@ -5,7 +5,7 @@ Repositório com meus estudos da linguagem **Java**, organizado por aulas. Aqui 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/status-em%20andamento-brightgreen?style=for-the-badge" alt="Status" />
-  <img src="https://img.shields.io/badge/aulas-7-blue?style=for-the-badge" alt="Aulas" />
+  <img src="https://img.shields.io/badge/aulas-8-blue?style=for-the-badge" alt="Aulas" />
 </p>
 
 ---
@@ -24,7 +24,8 @@ EstudoJava/
 ├── Aula04/   → Operadores aritméticos, relacionais, lógicos e de atribuição
 ├── Aula05/   → Condicionais, operador ternário e switch
 ├── Aula06/   → Estruturas de repetição (while, do-while, for)
-└── Aula07/   → Arrays (vetores)
+├── Aula07/   → Arrays (vetores)
+└── Aula08/   → Arrays multidimensionais (matrizes)
 ```
 
 ## 📚 Conteúdo por pasta
@@ -107,6 +108,17 @@ Declaração e uso de arrays (vetores), valores padrão de cada tipo primitivo, 
 | [Aula07pt2.java](Aula07/Aula07pt2.java) | Valores padrão de um array não inicializado (`0` para numéricos, `null` para `String`) e percorrimento de um array de `String` com `for` |
 | [Aula07pt3.java](Aula07/Aula07pt3.java) | Formas de inicialização de array (`new int[3]`, `{1,2,3}`, `new int[]{...}`) e percorrimento com `for` tradicional e `for-each` |
 
+---
+
+### 📁 [Aula08](Aula08/) — Arrays multidimensionais (matrizes)
+
+Arrays de duas dimensões (arrays de arrays): declaração, atribuição por índice, arrays "jagged" (linhas de tamanhos diferentes) e percorrimento com `for` aninhado e `for-each` aninhado.
+
+| Arquivo | Descrição |
+|---|---|
+| [Aula08.java](Aula08/Aula08.java) | Matriz `int[3][3]` (meses x dias), atribuição por índice `[i][j]` e percorrimento com `for` tradicional e `for-each` aninhados |
+| [Aula08pt2.java](Aula08/Aula08pt2.java) | Arrays multidimensionais "jagged" (linhas de tamanhos diferentes) usando `new int[3][]`, atribuindo arrays existentes e literais a cada linha |
+
 ## 🚀 Como executar
 
 Certifique-se de ter o **JDK** instalado ([Adoptium Temurin](https://adoptium.net/) ou similar).
@@ -136,6 +148,7 @@ java -cp Aula05 Aula05pt4Ex
 
 - [x] Laços de repetição (`for`, `while`, `do-while`)
 - [x] Arrays e Strings avançado
+- [x] Arrays multidimensionais
 - [ ] Programação Orientada a Objetos (classes, atributos, métodos, construtores)
 - [ ] Encapsulamento, herança e polimorfismo
 - [ ] Coleções (`List`, `Map`, `Set`)
