@@ -5,7 +5,7 @@ Repositório com meus estudos da linguagem **Java**, organizado por aulas. Aqui 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/status-em%20andamento-brightgreen?style=for-the-badge" alt="Status" />
-  <img src="https://img.shields.io/badge/aulas-6-blue?style=for-the-badge" alt="Aulas" />
+  <img src="https://img.shields.io/badge/aulas-7-blue?style=for-the-badge" alt="Aulas" />
 </p>
 
 ---
@@ -23,7 +23,8 @@ EstudoJava/
 ├── Aula03/   → Prática com variáveis e concatenação de strings
 ├── Aula04/   → Operadores aritméticos, relacionais, lógicos e de atribuição
 ├── Aula05/   → Condicionais, operador ternário e switch
-└── Aula06/   → Estruturas de repetição (while, do-while, for)
+├── Aula06/   → Estruturas de repetição (while, do-while, for)
+└── Aula07/   → Arrays (vetores)
 ```
 
 ## 📚 Conteúdo por pasta
@@ -94,6 +95,18 @@ Laços de repetição `while`, `do`/`while` e `for`, além de exercícios aplica
 | [Aula06Ex2.java](Aula06/Aula06Ex2.java) | Exercício: impressão dos números até um valor dado, interrompendo o laço com `break` ao passar de 25 |
 | [Aula06Ex3.java](Aula06/Aula06Ex3.java) | Exercício: cálculo do número de parcelas de um carro até que o valor da parcela atinja o mínimo de R$1000, usando `for` e `break` |
 
+---
+
+### 📁 [Aula07](Aula07/) — Arrays (vetores)
+
+Declaração e uso de arrays (vetores), valores padrão de cada tipo primitivo, diferentes formas de inicialização e percorrimento com `for` tradicional e `for-each`.
+
+| Arquivo | Descrição |
+|---|---|
+| [Aula07.java](Aula07/Aula07.java) | Criação de um array de `int` com `new`, atribuição de valores por índice e leitura |
+| [Aula07pt2.java](Aula07/Aula07pt2.java) | Valores padrão de um array não inicializado (`0` para numéricos, `null` para `String`) e percorrimento de um array de `String` com `for` |
+| [Aula07pt3.java](Aula07/Aula07pt3.java) | Formas de inicialização de array (`new int[3]`, `{1,2,3}`, `new int[]{...}`) e percorrimento com `for` tradicional e `for-each` |
+
 ## 🚀 Como executar
 
 Certifique-se de ter o **JDK** instalado ([Adoptium Temurin](https://adoptium.net/) ou similar).
@@ -122,7 +135,7 @@ java -cp Aula05 Aula05pt4Ex
 ## 🗺️ Próximos passos
 
 - [x] Laços de repetição (`for`, `while`, `do-while`)
-- [ ] Arrays e Strings avançado
+- [x] Arrays e Strings avançado
 - [ ] Programação Orientada a Objetos (classes, atributos, métodos, construtores)
 - [ ] Encapsulamento, herança e polimorfismo
 - [ ] Coleções (`List`, `Map`, `Set`)
