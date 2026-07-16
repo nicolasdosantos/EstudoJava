@@ -5,7 +5,7 @@ Repositório com meus estudos da linguagem **Java**, organizado por aulas. Aqui 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/status-em%20andamento-brightgreen?style=for-the-badge" alt="Status" />
-  <img src="https://img.shields.io/badge/aulas-8-blue?style=for-the-badge" alt="Aulas" />
+  <img src="https://img.shields.io/badge/aulas-9-blue?style=for-the-badge" alt="Aulas" />
 </p>
 
 ---
@@ -25,7 +25,8 @@ EstudoJava/
 ├── Aula05/   → Condicionais, operador ternário e switch
 ├── Aula06/   → Estruturas de repetição (while, do-while, for)
 ├── Aula07/   → Arrays (vetores)
-└── Aula08/   → Arrays multidimensionais (matrizes)
+├── Aula08/   → Arrays multidimensionais (matrizes)
+└── Aula09/   → Introdução a Classes e Objetos (POO)
 ```
 
 ## 📚 Conteúdo por pasta
@@ -119,6 +120,22 @@ Arrays de duas dimensões (arrays de arrays): declaração, atribuição por ín
 | [Aula08.java](Aula08/Aula08.java) | Matriz `int[3][3]` (meses x dias), atribuição por índice `[i][j]` e percorrimento com `for` tradicional e `for-each` aninhados |
 | [Aula08pt2.java](Aula08/Aula08pt2.java) | Arrays multidimensionais "jagged" (linhas de tamanhos diferentes) usando `new int[3][]`, atribuindo arrays existentes e literais a cada linha |
 
+---
+
+### 📁 [Aula09](Aula09/) — Introdução a Classes e Objetos (POO)
+
+Primeiros passos em Programação Orientada a Objetos: criação de classes de domínio com atributos públicos, instanciação de objetos com `new`, atribuição de valores e diferença entre variáveis independentes e referências para o mesmo objeto. Organizado em subpacotes `dominio` (classes) e `teste` (classes com `main` que instanciam e usam essas classes).
+
+| Arquivo | Descrição |
+|---|---|
+| [dominio/Carro.java](Aula09/introducaoClasses/dominio/Carro.java) | Classe de domínio `Carro` com atributos `nome`, `modelo` e `ano` |
+| [dominio/Estudante.java](Aula09/introducaoClasses/dominio/Estudante.java) | Classe de domínio `Estudante` com atributos `nome`, `idade` e `sexo` |
+| [dominio/Professor.java](Aula09/introducaoClasses/dominio/Professor.java) | Classe de domínio `Professor` com atributos `nome`, `idade` e `sexo` |
+| [teste/CarroExerc.java](Aula09/introducaoClasses/teste/CarroExerc.java) | Instanciação de dois objetos `Carro` independentes, com nota de estudo sobre o comportamento de referência ao atribuir um objeto a outro (`carro = carro2`) |
+| [teste/EstudanteTeste01.java](Aula09/introducaoClasses/teste/EstudanteTeste01.java) | Instanciação de `Estudante`, atribuição de valores aos atributos e impressão |
+| [teste/EstudanteTeste02.java](Aula09/introducaoClasses/teste/EstudanteTeste02.java) | Instanciação simples de `Estudante`, atribuindo apenas o atributo `nome` |
+| [teste/ProfessorTeste01.java](Aula09/introducaoClasses/teste/ProfessorTeste01.java) | Instanciação de `Professor`, atribuição de valores aos atributos e impressão |
+
 ## 🚀 Como executar
 
 Certifique-se de ter o **JDK** instalado ([Adoptium Temurin](https://adoptium.net/) ou similar).
@@ -149,7 +166,7 @@ java -cp Aula05 Aula05pt4Ex
 - [x] Laços de repetição (`for`, `while`, `do-while`)
 - [x] Arrays e Strings avançado
 - [x] Arrays multidimensionais
-- [ ] Programação Orientada a Objetos (classes, atributos, métodos, construtores)
+- [ ] Programação Orientada a Objetos (classes, atributos, métodos, construtores) — em andamento (classes e atributos já estudados)
 - [ ] Encapsulamento, herança e polimorfismo
 - [ ] Coleções (`List`, `Map`, `Set`)
 - [ ] Tratamento de exceções (`try`/`catch`)
