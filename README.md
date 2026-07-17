@@ -26,7 +26,7 @@ EstudoJava/
 ├── Aula06/   → Estruturas de repetição (while, do-while, for)
 ├── Aula07/   → Arrays (vetores)
 ├── Aula08/   → Arrays multidimensionais (matrizes)
-└── Aula09/   → Introdução a Classes e Objetos (POO)
+└── Aula09/   → Introdução a Classes, Objetos e Métodos (POO)
 ```
 
 ## 📚 Conteúdo por pasta
@@ -122,19 +122,26 @@ Arrays de duas dimensões (arrays de arrays): declaração, atribuição por ín
 
 ---
 
-### 📁 [Aula09](Aula09/) — Introdução a Classes e Objetos (POO)
+### 📁 [Aula09](Aula09/) — Introdução a Classes, Objetos e Métodos (POO)
 
-Primeiros passos em Programação Orientada a Objetos: criação de classes de domínio com atributos públicos, instanciação de objetos com `new`, atribuição de valores e diferença entre variáveis independentes e referências para o mesmo objeto. Organizado em subpacotes `dominio` (classes) e `teste` (classes com `main` que instanciam e usam essas classes).
+Primeiros passos em Programação Orientada a Objetos. Em `introducaoClasses`: criação de classes de domínio com atributos públicos, instanciação de objetos com `new`, atribuição de valores e diferença entre variáveis independentes e referências para o mesmo objeto. Em `IntroducaoMetodo`: criação de métodos (sem retorno, com parâmetros e com retorno de valor) e diferença entre passagem de parâmetro por valor (tipos primitivos) e por referência (objetos). Organizado em subpacotes `dominio` (classes) e `teste` (classes com `main` que instanciam e usam essas classes).
 
 | Arquivo | Descrição |
 |---|---|
-| [dominio/Carro.java](Aula09/introducaoClasses/dominio/Carro.java) | Classe de domínio `Carro` com atributos `nome`, `modelo` e `ano` |
-| [dominio/Estudante.java](Aula09/introducaoClasses/dominio/Estudante.java) | Classe de domínio `Estudante` com atributos `nome`, `idade` e `sexo` |
-| [dominio/Professor.java](Aula09/introducaoClasses/dominio/Professor.java) | Classe de domínio `Professor` com atributos `nome`, `idade` e `sexo` |
-| [teste/CarroExerc.java](Aula09/introducaoClasses/teste/CarroExerc.java) | Instanciação de dois objetos `Carro` independentes, com nota de estudo sobre o comportamento de referência ao atribuir um objeto a outro (`carro = carro2`) |
-| [teste/EstudanteTeste01.java](Aula09/introducaoClasses/teste/EstudanteTeste01.java) | Instanciação de `Estudante`, atribuição de valores aos atributos e impressão |
-| [teste/EstudanteTeste02.java](Aula09/introducaoClasses/teste/EstudanteTeste02.java) | Instanciação simples de `Estudante`, atribuindo apenas o atributo `nome` |
-| [teste/ProfessorTeste01.java](Aula09/introducaoClasses/teste/ProfessorTeste01.java) | Instanciação de `Professor`, atribuição de valores aos atributos e impressão |
+| [introducaoClasses/dominio/Carro.java](Aula09/introducaoClasses/dominio/Carro.java) | Classe de domínio `Carro` com atributos `nome`, `modelo` e `ano` |
+| [introducaoClasses/dominio/Estudante.java](Aula09/introducaoClasses/dominio/Estudante.java) | Classe de domínio `Estudante` com atributos `nome`, `idade` e `sexo` |
+| [introducaoClasses/dominio/Professor.java](Aula09/introducaoClasses/dominio/Professor.java) | Classe de domínio `Professor` com atributos `nome`, `idade` e `sexo` |
+| [introducaoClasses/teste/CarroExerc.java](Aula09/introducaoClasses/teste/CarroExerc.java) | Instanciação de dois objetos `Carro` independentes, com nota de estudo sobre o comportamento de referência ao atribuir um objeto a outro (`carro = carro2`) |
+| [introducaoClasses/teste/EstudanteTeste01.java](Aula09/introducaoClasses/teste/EstudanteTeste01.java) | Instanciação de `Estudante`, atribuição de valores aos atributos e impressão |
+| [introducaoClasses/teste/EstudanteTeste02.java](Aula09/introducaoClasses/teste/EstudanteTeste02.java) | Instanciação simples de `Estudante`, atribuindo apenas o atributo `nome` |
+| [introducaoClasses/teste/ProfessorTeste01.java](Aula09/introducaoClasses/teste/ProfessorTeste01.java) | Instanciação de `Professor`, atribuição de valores aos atributos e impressão |
+| [IntroducaoMetodo/dominio/Calculadora.java](Aula09/IntroducaoMetodo/dominio/Calculadora.java) | Classe `Calculadora` com métodos sem retorno (`soma`, `sub`, `mult`), método com retorno (`divi`) e método demonstrando que parâmetros primitivos recebem cópia do valor (`alt`) |
+| [IntroducaoMetodo/dominio/Estudante.java](Aula09/IntroducaoMetodo/dominio/Estudante.java) | Classe de domínio `Estudante` com atributos `nome`, `idade` e `sexo` |
+| [IntroducaoMetodo/dominio/ImprimeEstudante.java](Aula09/IntroducaoMetodo/dominio/ImprimeEstudante.java) | Classe com método `imprime` que recebe um objeto `Estudante` como parâmetro |
+| [IntroducaoMetodo/teste/CalculadoraTeste01.java](Aula09/IntroducaoMetodo/teste/CalculadoraTeste01.java) | Chamada do método `soma` (sem parâmetros e sem retorno) |
+| [IntroducaoMetodo/teste/Calculadora02.java](Aula09/IntroducaoMetodo/teste/Calculadora02.java) | Chamada do método `divi` (com parâmetros e retorno de valor) |
+| [IntroducaoMetodo/teste/CalculadoraTeste03.java](Aula09/IntroducaoMetodo/teste/CalculadoraTeste03.java) | Chamada do método `alt`, demonstrando que a alteração de parâmetros primitivos dentro do método não afeta as variáveis originais |
+| [IntroducaoMetodo/teste/EstudanteTeste.java](Aula09/IntroducaoMetodo/teste/EstudanteTeste.java) | Passagem de objetos `Estudante` para o método `imprime`, demonstrando passagem por referência |
 
 ## 🚀 Como executar
 
@@ -166,7 +173,7 @@ java -cp Aula05 Aula05pt4Ex
 - [x] Laços de repetição (`for`, `while`, `do-while`)
 - [x] Arrays e Strings avançado
 - [x] Arrays multidimensionais
-- [ ] Programação Orientada a Objetos (classes, atributos, métodos, construtores) — em andamento (classes e atributos já estudados)
+- [ ] Programação Orientada a Objetos (classes, atributos, métodos, construtores) — em andamento (classes, atributos e métodos já estudados)
 - [ ] Encapsulamento, herança e polimorfismo
 - [ ] Coleções (`List`, `Map`, `Set`)
 - [ ] Tratamento de exceções (`try`/`catch`)
