@@ -124,7 +124,7 @@ Arrays de duas dimensões (arrays de arrays): declaração, atribuição por ín
 
 ### 📁 [Aula09](Aula09/) — Introdução a Classes, Objetos e Métodos (POO)
 
-Primeiros passos em Programação Orientada a Objetos. Em `introducaoClasses`: criação de classes de domínio com atributos públicos, instanciação de objetos com `new`, atribuição de valores e diferença entre variáveis independentes e referências para o mesmo objeto. Em `IntroducaoMetodo`: criação de métodos (sem retorno, com parâmetros e com retorno de valor) e diferença entre passagem de parâmetro por valor (tipos primitivos) e por referência (objetos). Organizado em subpacotes `dominio` (classes) e `teste` (classes com `main` que instanciam e usam essas classes).
+Primeiros passos em Programação Orientada a Objetos. Em `introducaoClasses`: criação de classes de domínio com atributos públicos, instanciação de objetos com `new`, atribuição de valores e diferença entre variáveis independentes e referências para o mesmo objeto. Em `IntroducaoMetodo`: criação de métodos (sem retorno, com parâmetros, com retorno de valor e com varargs), método definido na própria classe de domínio, e diferença entre passagem de parâmetro por valor (tipos primitivos) e por referência (objetos) — incluindo a mutação de um atributo do objeto dentro do método. Em `Exercicio`: aplicação prática combinando métodos com array como atributo da classe. Organizado em subpacotes `dominio` (classes) e `teste` (classes com `main` que instanciam e usam essas classes).
 
 | Arquivo | Descrição |
 |---|---|
@@ -135,13 +135,17 @@ Primeiros passos em Programação Orientada a Objetos. Em `introducaoClasses`: c
 | [introducaoClasses/teste/EstudanteTeste01.java](Aula09/introducaoClasses/teste/EstudanteTeste01.java) | Instanciação de `Estudante`, atribuição de valores aos atributos e impressão |
 | [introducaoClasses/teste/EstudanteTeste02.java](Aula09/introducaoClasses/teste/EstudanteTeste02.java) | Instanciação simples de `Estudante`, atribuindo apenas o atributo `nome` |
 | [introducaoClasses/teste/ProfessorTeste01.java](Aula09/introducaoClasses/teste/ProfessorTeste01.java) | Instanciação de `Professor`, atribuição de valores aos atributos e impressão |
-| [IntroducaoMetodo/dominio/Calculadora.java](Aula09/IntroducaoMetodo/dominio/Calculadora.java) | Classe `Calculadora` com métodos sem retorno (`soma`, `sub`, `mult`), método com retorno (`divi`) e método demonstrando que parâmetros primitivos recebem cópia do valor (`alt`) |
-| [IntroducaoMetodo/dominio/Estudante.java](Aula09/IntroducaoMetodo/dominio/Estudante.java) | Classe de domínio `Estudante` com atributos `nome`, `idade` e `sexo` |
-| [IntroducaoMetodo/dominio/ImprimeEstudante.java](Aula09/IntroducaoMetodo/dominio/ImprimeEstudante.java) | Classe com método `imprime` que recebe um objeto `Estudante` como parâmetro |
+| [IntroducaoMetodo/dominio/Calculadora.java](Aula09/IntroducaoMetodo/dominio/Calculadora.java) | Classe `Calculadora` com métodos sem retorno (`soma`, `sub`, `mult`), método com retorno (`divi`), método demonstrando que parâmetros primitivos recebem cópia do valor (`alt`), método recebendo array (`somArray`) e método com varargs (`somaVarArgs`) |
+| [IntroducaoMetodo/dominio/Estudante.java](Aula09/IntroducaoMetodo/dominio/Estudante.java) | Classe de domínio `Estudante` com atributos `nome`, `idade` e `sexo`, e método próprio `imprime()` |
+| [IntroducaoMetodo/dominio/ImprimeEstudante.java](Aula09/IntroducaoMetodo/dominio/ImprimeEstudante.java) | Classe com método `imprime` que recebe um objeto `Estudante` como parâmetro e altera o atributo `nome` desse objeto |
 | [IntroducaoMetodo/teste/CalculadoraTeste01.java](Aula09/IntroducaoMetodo/teste/CalculadoraTeste01.java) | Chamada do método `soma` (sem parâmetros e sem retorno) |
 | [IntroducaoMetodo/teste/Calculadora02.java](Aula09/IntroducaoMetodo/teste/Calculadora02.java) | Chamada do método `divi` (com parâmetros e retorno de valor) |
 | [IntroducaoMetodo/teste/CalculadoraTeste03.java](Aula09/IntroducaoMetodo/teste/CalculadoraTeste03.java) | Chamada do método `alt`, demonstrando que a alteração de parâmetros primitivos dentro do método não afeta as variáveis originais |
-| [IntroducaoMetodo/teste/EstudanteTeste.java](Aula09/IntroducaoMetodo/teste/EstudanteTeste.java) | Passagem de objetos `Estudante` para o método `imprime`, demonstrando passagem por referência |
+| [IntroducaoMetodo/teste/CalculadoraTeste05.java](Aula09/IntroducaoMetodo/teste/CalculadoraTeste05.java) | Comparação entre chamar `somArray` (passando um array já montado) e `somaVarArgs` (passando os valores direto, sem montar array) |
+| [IntroducaoMetodo/teste/EstudanteTeste.java](Aula09/IntroducaoMetodo/teste/EstudanteTeste.java) | Passagem de objetos `Estudante` para o método `imprime`, demonstrando passagem por referência e que a alteração do atributo `nome` dentro do método persiste após a chamada |
+| [IntroducaoMetodo/teste/EstudanteTeste02.java](Aula09/IntroducaoMetodo/teste/EstudanteTeste02.java) | Instanciação de `Estudante` chamando o método `imprime()` definido na própria classe, sem depender de `ImprimeEstudante` |
+| [Exercicio/dominio/Funcionario.java](Aula09/Exercicio/dominio/Funcionario.java) | Classe `Funcionario` com atributo array (`salario`), método `imprime()` e método `media()` que percorre o array, com checagem de `null` para array não inicializado |
+| [Exercicio/teste/FuncionaTeste.java](Aula09/Exercicio/teste/FuncionaTeste.java) | Instanciação de `Funcionario`, atribuição de um array de salários e chamada dos métodos `imprime()` e `media()` |
 
 ## 🚀 Como executar
 

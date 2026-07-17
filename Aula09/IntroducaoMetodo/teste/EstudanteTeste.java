@@ -19,6 +19,11 @@ public class EstudanteTeste {
         // (diferente do que acontece com tipo primitivo, que recebe só uma copia)
         imprime.imprime(estudante1);
         imprime.imprime(estudante2);
+        System.out.println("------------");
+        // nessa segunda chamada o nome já sai como "Teste" pra ambos, porque o imprime()
+        // alterou o atributo nome do objeto na chamada anterior (mesma referencia)
+        imprime.imprime(estudante1);
+        imprime.imprime(estudante2);
 
     }
 }
