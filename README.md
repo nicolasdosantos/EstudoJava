@@ -122,9 +122,9 @@ Arrays de duas dimensões (arrays de arrays): declaração, atribuição por ín
 
 ---
 
-### 📁 [Aula09](Aula09/) — Introdução a Classes, Objetos e Métodos (POO)
+### 📁 [Aula09](Aula09/) — Introdução a Classes, Objetos, Métodos e Encapsulamento (POO)
 
-Primeiros passos em Programação Orientada a Objetos. Em `introducaoClasses`: criação de classes de domínio com atributos públicos, instanciação de objetos com `new`, atribuição de valores e diferença entre variáveis independentes e referências para o mesmo objeto. Em `IntroducaoMetodo`: criação de métodos (sem retorno, com parâmetros, com retorno de valor e com varargs), método definido na própria classe de domínio, e diferença entre passagem de parâmetro por valor (tipos primitivos) e por referência (objetos) — incluindo a mutação de um atributo do objeto dentro do método. Em `Exercicio`: aplicação prática combinando métodos com array como atributo da classe. Organizado em subpacotes `dominio` (classes) e `teste` (classes com `main` que instanciam e usam essas classes).
+Primeiros passos em Programação Orientada a Objetos. Em `introducaoClasses`: criação de classes de domínio com atributos públicos, instanciação de objetos com `new`, atribuição de valores e diferença entre variáveis independentes e referências para o mesmo objeto. Em `IntroducaoMetodo`: criação de métodos (sem retorno, com parâmetros, com retorno de valor e com varargs), método definido na própria classe de domínio, diferença entre passagem de parâmetro por valor (tipos primitivos) e por referência (objetos) — incluindo a mutação de um atributo do objeto dentro do método — e encapsulamento (atributos `private` com métodos `get`/`set`, incluindo validação dentro do `set`). Em `Exercicio`: aplicação prática combinando métodos com array como atributo da classe, também migrado para atributos `private` com `get`/`set`. Organizado em subpacotes `dominio` (classes) e `teste` (classes com `main` que instanciam e usam essas classes).
 
 | Arquivo | Descrição |
 |---|---|
@@ -144,8 +144,10 @@ Primeiros passos em Programação Orientada a Objetos. Em `introducaoClasses`: c
 | [IntroducaoMetodo/teste/CalculadoraTeste05.java](Aula09/IntroducaoMetodo/teste/CalculadoraTeste05.java) | Comparação entre chamar `somArray` (passando um array já montado) e `somaVarArgs` (passando os valores direto, sem montar array) |
 | [IntroducaoMetodo/teste/EstudanteTeste.java](Aula09/IntroducaoMetodo/teste/EstudanteTeste.java) | Passagem de objetos `Estudante` para o método `imprime`, demonstrando passagem por referência e que a alteração do atributo `nome` dentro do método persiste após a chamada |
 | [IntroducaoMetodo/teste/EstudanteTeste02.java](Aula09/IntroducaoMetodo/teste/EstudanteTeste02.java) | Instanciação de `Estudante` chamando o método `imprime()` definido na própria classe, sem depender de `ImprimeEstudante` |
-| [Exercicio/dominio/Funcionario.java](Aula09/Exercicio/dominio/Funcionario.java) | Classe `Funcionario` com atributo array (`salario`), método `imprime()` e método `media()` que percorre o array, com checagem de `null` para array não inicializado |
-| [Exercicio/teste/FuncionaTeste.java](Aula09/Exercicio/teste/FuncionaTeste.java) | Instanciação de `Funcionario`, atribuição de um array de salários e chamada dos métodos `imprime()` e `media()` |
+| [Exercicio/dominio/Funcionario.java](Aula09/Exercicio/dominio/Funcionario.java) | Classe `Funcionario` com atributos `private` (`nome`, `idade`, `salario`, `media`), métodos `get`/`set` para cada um, método `imprime()` e método `media()` que percorre o array e guarda o resultado no atributo `media` (exposto via `getMedia()`) |
+| [Exercicio/teste/FuncionaTeste.java](Aula09/Exercicio/teste/FuncionaTeste.java) | Instanciação de `Funcionario`, preenchimento dos atributos via `set` (obrigatório após virarem `private`) e chamada dos métodos `imprime()` e `media()` |
+| [IntroducaoMetodo/dominio/Pessoa.java](Aula09/IntroducaoMetodo/dominio/Pessoa.java) | Classe `Pessoa` com atributos `private` (`nome`, `idade`) e métodos `get`/`set`, incluindo validação dentro de `setIdade` para recusar idade negativa |
+| [IntroducaoMetodo/teste/PessoaTeste.java](Aula09/IntroducaoMetodo/teste/PessoaTeste.java) | Instanciação de `Pessoa` via `set`, leitura dos atributos via `get` para montar uma impressão própria (em vez de usar o `imprime()` da classe) |
 
 ## 🚀 Como executar
 
@@ -178,7 +180,8 @@ java -cp Aula05 Aula05pt4Ex
 - [x] Arrays e Strings avançado
 - [x] Arrays multidimensionais
 - [ ] Programação Orientada a Objetos (classes, atributos, métodos, construtores) — em andamento (classes, atributos e métodos já estudados)
-- [ ] Encapsulamento, herança e polimorfismo
+- [x] Encapsulamento (atributos `private` com `get`/`set` e validação)
+- [ ] Herança e polimorfismo
 - [ ] Coleções (`List`, `Map`, `Set`)
 - [ ] Tratamento de exceções (`try`/`catch`)
 
