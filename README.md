@@ -140,6 +140,8 @@ Primeiros passos em POO: da criação de classes até encapsulamento e sobrecarg
 | Array como atributo | Array `private` com `get`/`set` e cálculo de média | [Funcionario.java](Aula09/Exercicio/dominio/Funcionario.java) |
 | Sobrecarga (*overloading*) | Mesmo método, assinaturas diferentes | [Anime.java](Aula09/SobracargaMetodos/dominio/Anime.java) |
 | Construtores | Construtor sobrecarregado, encadeamento com `this(...)` | [Anime.java](Aula09/ConstrutoresMetodos/dominio/Anime.java) |
+| Bloco de inicialização | Bloco `{ }` de instância, executado antes do construtor | [Anime.java](Aula09/BlocosInicializacao/dominio/Anime.java) |
+| Modificador `static` | Atributo, bloco `static{ }` e métodos de classe (compartilhados entre objetos) | [Carro.java](Aula09/ModificadoresEstatico/dominio/Carro.java) |
 
 Ainda não aborda herança e interfaces.
 
