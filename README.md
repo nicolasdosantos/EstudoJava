@@ -144,8 +144,9 @@ Primeiros passos em POO: da criação de classes até encapsulamento e sobrecarg
 | Modificador `static` | Atributo, bloco `static{ }` e métodos de classe (compartilhados entre objetos) | [Carro.java](Aula09/ModificadoresEstatico/dominio/Carro.java) |
 | Leitura de dados | `Scanner` para entrada do usuário (`nextLine`, `nextInt`, `next()`) | [LeituraDados01.java](Aula09/LeituraDados/LeituraDados01.java) |
 | Associação entre objetos | Referência "um" (`Jogador`→`Time`) e "muitos" (`Time`→`Jogador[]`), associação bidirecional montada manualmente | [Jogador.java](Aula09/Associacao/dominio/Jogador.java) |
+| Herança | `extends`, reaproveitamento de atributos/métodos da classe pai (relação "é um") | [Funcionario.java](Aula09/Herança/dominio/Funcionario.java) |
 
-Ainda não aborda herança e interfaces.
+Ainda não aborda polimorfismo e interfaces.
 
 </details>
 
@@ -183,7 +184,8 @@ java -cp Aula05 Aula05pt4Ex
 - [x] Sobrecarga de métodos (overloading)
 - [x] Construtores (sobrecarga de construtores, encadeamento com `this(...)`)
 - [x] Associação entre objetos (referência "um" e "muitos", associação bidirecional)
-- [ ] Herança e polimorfismo
+- [x] Herança (`extends`, reaproveitamento de atributos/métodos da classe pai)
+- [ ] Polimorfismo
 - [ ] Coleções (`List`, `Map`, `Set`)
 - [ ] Tratamento de exceções (`try`/`catch`)
 
