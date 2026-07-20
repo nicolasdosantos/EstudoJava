@@ -139,8 +139,9 @@ Primeiros passos em POO: da criação de classes até encapsulamento e sobrecarg
 | Encapsulamento | Atributos `private`, `get`/`set` com validação | [Pessoa.java](Aula09/IntroducaoMetodo/dominio/Pessoa.java) |
 | Array como atributo | Array `private` com `get`/`set` e cálculo de média | [Funcionario.java](Aula09/Exercicio/dominio/Funcionario.java) |
 | Sobrecarga (*overloading*) | Mesmo método, assinaturas diferentes | [Anime.java](Aula09/SobracargaMetodos/dominio/Anime.java) |
+| Construtores | Construtor sobrecarregado, encadeamento com `this(...)` | [Anime.java](Aula09/ConstrutoresMetodos/dominio/Anime.java) |
 
-Ainda não aborda construtores, herança e interfaces.
+Ainda não aborda herança e interfaces.
 
 </details>
 
@@ -173,9 +174,10 @@ java -cp Aula05 Aula05pt4Ex
 - [x] Laços de repetição (`for`, `while`, `do-while`)
 - [x] Arrays e Strings avançado
 - [x] Arrays multidimensionais
-- [ ] Programação Orientada a Objetos (classes, atributos, métodos, construtores) — em andamento (classes, atributos e métodos já estudados)
+- [ ] Programação Orientada a Objetos (classes, atributos, métodos, construtores) — em andamento (classes, atributos, métodos e construtores já estudados)
 - [x] Encapsulamento (atributos `private` com `get`/`set` e validação)
 - [x] Sobrecarga de métodos (overloading)
+- [x] Construtores (sobrecarga de construtores, encadeamento com `this(...)`)
 - [ ] Herança e polimorfismo
 - [ ] Coleções (`List`, `Map`, `Set`)
 - [ ] Tratamento de exceções (`try`/`catch`)
