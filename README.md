@@ -12,144 +12,137 @@ Repositório com meus estudos da linguagem **Java**, organizado por aulas. Aqui 
 
 ## 📌 Sobre
 
-Este projeto tem como objetivo registrar meu aprendizado em Java de forma incremental. **Cada pasta representa uma aula**, contendo um ou mais arquivos `.java` com exemplos práticos e comentários explicando os conceitos estudados.
+Este projeto registra meu aprendizado em Java de forma incremental. **Cada pasta representa uma aula**, com um ou mais arquivos `.java` de exemplo prático e comentários explicando os conceitos estudados.
 
-## 🗂️ Estrutura do repositório
+## 📊 Progresso
 
-```
-EstudoJava/
-├── Aula01/   → Primeiro programa e sintaxe básica
-├── Aula02/   → Tipos primitivos, casting e variáveis
-├── Aula03/   → Prática com variáveis e concatenação de strings
-├── Aula04/   → Operadores aritméticos, relacionais, lógicos e de atribuição
-├── Aula05/   → Condicionais, operador ternário e switch
-├── Aula06/   → Estruturas de repetição (while, do-while, for)
-├── Aula07/   → Arrays (vetores)
-├── Aula08/   → Arrays multidimensionais (matrizes)
-└── Aula09/   → Classes, Objetos, Métodos, Encapsulamento e Sobrecarga (POO)
-```
+| Aula | Tema | Status |
+|---|---|---|
+| [Aula01](Aula01/) | Primeiro programa | ✅ |
+| [Aula02](Aula02/) | Tipos primitivos e variáveis | ✅ |
+| [Aula03](Aula03/) | Strings e concatenação | ✅ |
+| [Aula04](Aula04/) | Operadores | ✅ |
+| [Aula05](Aula05/) | Condicionais, ternário e switch | ✅ |
+| [Aula06](Aula06/) | Estruturas de repetição | ✅ |
+| [Aula07](Aula07/) | Arrays | ✅ |
+| [Aula08](Aula08/) | Arrays multidimensionais | ✅ |
+| [Aula09](Aula09/) | Orientação a Objetos | 🔄 em andamento |
 
-## 📚 Conteúdo por pasta
+## 📚 Conteúdo por aula
 
-### 📁 [Aula01](Aula01/) — Primeiro programa
+Clique em uma aula para ver os tópicos praticados e os arquivos principais.
 
-Introdução à sintaxe do Java: estrutura de uma classe, método `main` e saída no console.
+<details>
+<summary><strong>Aula01</strong> — Primeiro programa</summary>
 
-| Arquivo | Descrição |
-|---|---|
-| [Aula01.java](Aula01/Aula01.java) | Programa clássico "Hello World" com `System.out.println` |
+Introdução à sintaxe do Java: estrutura de uma classe e saída no console.
 
----
+| Tópico | Conceito praticado | Arquivo |
+|---|---|---|
+| Sintaxe básica | Estrutura de classe, método `main`, `System.out.println` | [Aula01.java](Aula01/Aula01.java) |
 
-### 📁 [Aula02](Aula02/) — Tipos primitivos e variáveis
+</details>
 
-Tipos primitivos (`int`, `long`, `double`, `float`, `byte`, `short`, `boolean`, `char`), a diferença entre tipos primitivos e tipo de referência (`String`), *casting* de valores e inferência de tipo com `var`.
+<details>
+<summary><strong>Aula02</strong> — Tipos primitivos e variáveis</summary>
 
-| Arquivo | Descrição |
-|---|---|
-| [Aula02.java](Aula02/Aula02.java) | Declaração dos tipos primitivos, *casting* de `long` para `int` (com perda de precisão), `String` como tipo de referência e uso de `var` |
+Tipos primitivos, conversão de tipos e inferência de tipo.
 
----
+| Tópico | Conceito praticado | Arquivo |
+|---|---|---|
+| Tipos e casting | `int`/`long`/`double`/`boolean`/`char`, *casting* `long`→`int`, `var` | [Aula02.java](Aula02/Aula02.java) |
 
-### 📁 [Aula03](Aula03/) — Prática com variáveis e strings
+</details>
 
-Exercício de fixação da Aula02, aplicando variáveis de diferentes tipos em uma concatenação de `String` mais elaborada.
+<details>
+<summary><strong>Aula03</strong> — Strings e concatenação</summary>
 
-| Arquivo | Descrição |
-|---|---|
-| [Aula03.java](Aula03/Aula03.java) | Concatenação de `String`, `double` e texto formando uma frase (declaração de recebimento de salário) |
+Prática de concatenação de `String` com diferentes tipos.
 
----
+| Tópico | Conceito praticado | Arquivo |
+|---|---|---|
+| Strings | Concatenação de `String`, `double` e texto | [Aula03.java](Aula03/Aula03.java) |
 
-### 📁 [Aula04](Aula04/) — Operadores
+</details>
 
-Operadores aritméticos, relacionais, lógicos, de atribuição e de incremento/decremento.
+<details>
+<summary><strong>Aula04</strong> — Operadores</summary>
 
-| Arquivo | Descrição |
-|---|---|
-| [Aula04.java](Aula04/Aula04.java) | Operadores aritméticos (`+ - * / %`), relacionais (`< > <= >= == !=`), lógicos (`&& \|\| !`), de atribuição (`+= -= *= /= %=`) e incremento/decremento (`++ --`), incluindo diferença entre pré e pós-incremento |
+Todos os operadores da linguagem em um só lugar.
 
----
+| Tópico | Conceito praticado | Arquivo |
+|---|---|---|
+| Operadores | Aritméticos, relacionais, lógicos, atribuição, incremento/decremento | [Aula04.java](Aula04/Aula04.java) |
 
-### 📁 [Aula05](Aula05/) — Condicionais, ternário e switch
+</details>
 
-Estruturas de decisão: `if`/`else`, `if`/`else if`/`else`, operador ternário e `switch`/`case`, com exercícios práticos de faixa salarial, categoria por idade e dia da semana.
+<details>
+<summary><strong>Aula05</strong> — Condicionais, ternário e switch</summary>
 
-| Arquivo | Descrição |
-|---|---|
-| [Aula05.java](Aula05/Aula05.java) | `if`/`else` básico e operador de negação `!` |
-| [Aula05Ex.java](Aula05/Aula05Ex.java) | Exercício: cálculo de imposto por faixa salarial com `if`/`else if`/`else` |
-| [Aula05pt2.java](Aula05/Aula05pt2.java) | Classificação por categoria de idade (infantil / juvenil / adulta) com `if`/`else if`/`else` |
-| [Aula05pt3.java](Aula05/Aula05pt3.java) | Operador ternário (`condição ? valorA : valorB`) reescrevendo um `if`/`else` |
-| [Aula05pt4.java](Aula05/Aula05pt4.java) | `switch`/`case` para dia da semana e verificação de sexo |
-| [Aula05pt4Ex.java](Aula05/Aula05pt4Ex.java) | Exercício: dia útil vs. fim de semana com `switch`, incluindo *fallthrough* de `case` |
+Estruturas de decisão, do `if` básico ao `switch` com *fallthrough*.
 
----
+| Tópico | Conceito praticado | Arquivo |
+|---|---|---|
+| if/else | Condição básica e negação lógica | [Aula05.java](Aula05/Aula05.java) |
+| Ternário | `condição ? a : b` reescrevendo um if/else | [Aula05pt3.java](Aula05/Aula05pt3.java) |
+| switch/case | Seleção por valor, incluindo *fallthrough* | [Aula05pt4Ex.java](Aula05/Aula05pt4Ex.java) |
 
-### 📁 [Aula06](Aula06/) — Estruturas de repetição
+</details>
 
-Laços de repetição `while`, `do`/`while` e `for`, além de exercícios aplicando a palavra-chave `break` para interromper o laço quando uma condição é atingida.
+<details>
+<summary><strong>Aula06</strong> — Estruturas de repetição</summary>
 
-| Arquivo | Descrição |
-|---|---|
-| [Aula06.java](Aula06/Aula06.java) | Introdução a `while`, `do`/`while` e `for`, imprimindo uma contagem de 0 a 10 em cada estrutura |
-| [Aula06Ex.java](Aula06/Aula06Ex.java) | Exercício: impressão de todos os números pares de 0 a 100 usando `for` e o operador `%` |
-| [Aula06Ex2.java](Aula06/Aula06Ex2.java) | Exercício: impressão dos números até um valor dado, interrompendo o laço com `break` ao passar de 25 |
-| [Aula06Ex3.java](Aula06/Aula06Ex3.java) | Exercício: cálculo do número de parcelas de um carro até que o valor da parcela atinja o mínimo de R$1000, usando `for` e `break` |
+Laços de repetição e controle de fluxo com `break`.
 
----
+| Tópico | Conceito praticado | Arquivo |
+|---|---|---|
+| while / do-while / for | As três formas de repetição | [Aula06.java](Aula06/Aula06.java) |
+| break | Interrupção do laço ao atingir uma condição | [Aula06Ex3.java](Aula06/Aula06Ex3.java) |
 
-### 📁 [Aula07](Aula07/) — Arrays (vetores)
+</details>
 
-Declaração e uso de arrays (vetores), valores padrão de cada tipo primitivo, diferentes formas de inicialização e percorrimento com `for` tradicional e `for-each`.
+<details>
+<summary><strong>Aula07</strong> — Arrays</summary>
 
-| Arquivo | Descrição |
-|---|---|
-| [Aula07.java](Aula07/Aula07.java) | Criação de um array de `int` com `new`, atribuição de valores por índice e leitura |
-| [Aula07pt2.java](Aula07/Aula07pt2.java) | Valores padrão de um array não inicializado (`0` para numéricos, `null` para `String`) e percorrimento de um array de `String` com `for` |
-| [Aula07pt3.java](Aula07/Aula07pt3.java) | Formas de inicialização de array (`new int[3]`, `{1,2,3}`, `new int[]{...}`) e percorrimento com `for` tradicional e `for-each` |
+Criação de arrays, valores padrão e formas de percorrer.
 
----
+| Tópico | Conceito praticado | Arquivo |
+|---|---|---|
+| Criação e leitura | Array de `int` com `new`, atribuição por índice | [Aula07.java](Aula07/Aula07.java) |
+| Valores padrão | `0` para numéricos, `null` para `String` | [Aula07pt2.java](Aula07/Aula07pt2.java) |
+| Inicialização e for-each | Formas de inicializar e percorrer | [Aula07pt3.java](Aula07/Aula07pt3.java) |
 
-### 📁 [Aula08](Aula08/) — Arrays multidimensionais (matrizes)
+</details>
 
-Arrays de duas dimensões (arrays de arrays): declaração, atribuição por índice, arrays "jagged" (linhas de tamanhos diferentes) e percorrimento com `for` aninhado e `for-each` aninhado.
+<details>
+<summary><strong>Aula08</strong> — Arrays multidimensionais</summary>
 
-| Arquivo | Descrição |
-|---|---|
-| [Aula08.java](Aula08/Aula08.java) | Matriz `int[3][3]` (meses x dias), atribuição por índice `[i][j]` e percorrimento com `for` tradicional e `for-each` aninhados |
-| [Aula08pt2.java](Aula08/Aula08pt2.java) | Arrays multidimensionais "jagged" (linhas de tamanhos diferentes) usando `new int[3][]`, atribuindo arrays existentes e literais a cada linha |
+Matrizes e arrays com linhas de tamanhos diferentes.
 
----
+| Tópico | Conceito praticado | Arquivo |
+|---|---|---|
+| Matrizes | `int[3][3]`, `for` e `for-each` aninhados | [Aula08.java](Aula08/Aula08.java) |
+| Jagged arrays | Linhas de tamanhos diferentes | [Aula08pt2.java](Aula08/Aula08pt2.java) |
 
-### 📁 [Aula09](Aula09/) — Classes, Objetos, Métodos, Encapsulamento e Sobrecarga (POO)
+</details>
 
-Primeiros passos em Programação Orientada a Objetos. Em `introducaoClasses`: criação de classes de domínio com atributos públicos, instanciação de objetos com `new`, atribuição de valores e diferença entre variáveis independentes e referências para o mesmo objeto. Em `IntroducaoMetodo`: criação de métodos (sem retorno, com parâmetros, com retorno de valor e com varargs), método definido na própria classe de domínio, diferença entre passagem de parâmetro por valor (tipos primitivos) e por referência (objetos) — incluindo a mutação de um atributo do objeto dentro do método — e encapsulamento (atributos `private` com métodos `get`/`set`, incluindo validação dentro do `set`). Em `Exercicio`: aplicação prática combinando métodos com array como atributo da classe, também migrado para atributos `private` com `get`/`set`. Em `SobracargaMetodos`: sobrecarga de métodos (overloading) — duas versões de `init` com assinaturas diferentes, uma reaproveitando a outra via `this.init(...)`. Organizado em subpacotes `dominio` (classes) e `teste`/`testes` (classes com `main` que instanciam e usam essas classes).
+<details open>
+<summary><strong>Aula09</strong> — Programação Orientada a Objetos <em>(em andamento)</em></summary>
 
-| Arquivo | Descrição |
-|---|---|
-| [introducaoClasses/dominio/Carro.java](Aula09/introducaoClasses/dominio/Carro.java) | Classe de domínio `Carro` com atributos `nome`, `modelo` e `ano` |
-| [introducaoClasses/dominio/Estudante.java](Aula09/introducaoClasses/dominio/Estudante.java) | Classe de domínio `Estudante` com atributos `nome`, `idade` e `sexo` |
-| [introducaoClasses/dominio/Professor.java](Aula09/introducaoClasses/dominio/Professor.java) | Classe de domínio `Professor` com atributos `nome`, `idade` e `sexo` |
-| [introducaoClasses/teste/CarroExerc.java](Aula09/introducaoClasses/teste/CarroExerc.java) | Instanciação de dois objetos `Carro` independentes, com nota de estudo sobre o comportamento de referência ao atribuir um objeto a outro (`carro = carro2`) |
-| [introducaoClasses/teste/EstudanteTeste01.java](Aula09/introducaoClasses/teste/EstudanteTeste01.java) | Instanciação de `Estudante`, atribuição de valores aos atributos e impressão |
-| [introducaoClasses/teste/EstudanteTeste02.java](Aula09/introducaoClasses/teste/EstudanteTeste02.java) | Instanciação simples de `Estudante`, atribuindo apenas o atributo `nome` |
-| [introducaoClasses/teste/ProfessorTeste01.java](Aula09/introducaoClasses/teste/ProfessorTeste01.java) | Instanciação de `Professor`, atribuição de valores aos atributos e impressão |
-| [IntroducaoMetodo/dominio/Calculadora.java](Aula09/IntroducaoMetodo/dominio/Calculadora.java) | Classe `Calculadora` com métodos sem retorno (`soma`, `sub`, `mult`), método com retorno (`divi`), método demonstrando que parâmetros primitivos recebem cópia do valor (`alt`), método recebendo array (`somArray`) e método com varargs (`somaVarArgs`) |
-| [IntroducaoMetodo/dominio/Estudante.java](Aula09/IntroducaoMetodo/dominio/Estudante.java) | Classe de domínio `Estudante` com atributos `nome`, `idade` e `sexo`, e método próprio `imprime()` |
-| [IntroducaoMetodo/dominio/ImprimeEstudante.java](Aula09/IntroducaoMetodo/dominio/ImprimeEstudante.java) | Classe com método `imprime` que recebe um objeto `Estudante` como parâmetro e altera o atributo `nome` desse objeto |
-| [IntroducaoMetodo/teste/CalculadoraTeste01.java](Aula09/IntroducaoMetodo/teste/CalculadoraTeste01.java) | Chamada do método `soma` (sem parâmetros e sem retorno) |
-| [IntroducaoMetodo/teste/Calculadora02.java](Aula09/IntroducaoMetodo/teste/Calculadora02.java) | Chamada do método `divi` (com parâmetros e retorno de valor) |
-| [IntroducaoMetodo/teste/CalculadoraTeste03.java](Aula09/IntroducaoMetodo/teste/CalculadoraTeste03.java) | Chamada do método `alt`, demonstrando que a alteração de parâmetros primitivos dentro do método não afeta as variáveis originais |
-| [IntroducaoMetodo/teste/CalculadoraTeste05.java](Aula09/IntroducaoMetodo/teste/CalculadoraTeste05.java) | Comparação entre chamar `somArray` (passando um array já montado) e `somaVarArgs` (passando os valores direto, sem montar array) |
-| [IntroducaoMetodo/teste/EstudanteTeste.java](Aula09/IntroducaoMetodo/teste/EstudanteTeste.java) | Passagem de objetos `Estudante` para o método `imprime`, demonstrando passagem por referência e que a alteração do atributo `nome` dentro do método persiste após a chamada |
-| [IntroducaoMetodo/teste/EstudanteTeste02.java](Aula09/IntroducaoMetodo/teste/EstudanteTeste02.java) | Instanciação de `Estudante` chamando o método `imprime()` definido na própria classe, sem depender de `ImprimeEstudante` |
-| [Exercicio/dominio/Funcionario.java](Aula09/Exercicio/dominio/Funcionario.java) | Classe `Funcionario` com atributos `private` (`nome`, `idade`, `salario`, `media`), métodos `get`/`set` para cada um, método `imprime()` e método `media()` que percorre o array e guarda o resultado no atributo `media` (exposto via `getMedia()`) |
-| [Exercicio/teste/FuncionaTeste.java](Aula09/Exercicio/teste/FuncionaTeste.java) | Instanciação de `Funcionario`, preenchimento dos atributos via `set` (obrigatório após virarem `private`) e chamada dos métodos `imprime()` e `media()` |
-| [IntroducaoMetodo/dominio/Pessoa.java](Aula09/IntroducaoMetodo/dominio/Pessoa.java) | Classe `Pessoa` com atributos `private` (`nome`, `idade`) e métodos `get`/`set`, incluindo validação dentro de `setIdade` para recusar idade negativa |
-| [IntroducaoMetodo/teste/PessoaTeste.java](Aula09/IntroducaoMetodo/teste/PessoaTeste.java) | Instanciação de `Pessoa` via `set`, leitura dos atributos via `get` para montar uma impressão própria (em vez de usar o `imprime()` da classe) |
-| [SobracargaMetodos/dominio/Anime.java](Aula09/SobracargaMetodos/dominio/Anime.java) | Classe `Anime` com atributos `private` e dois métodos `init` sobrecarregados (3 e 4 parâmetros), onde a versão de 4 parâmetros reaproveita a de 3 via `this.init(...)` |
-| [SobracargaMetodos/testes/AnimeTeste.java](Aula09/SobracargaMetodos/testes/AnimeTeste.java) | Instanciação de `Anime` chamando a sobrecarga de `init` com 4 argumentos (nome, tipo, episódios e gênero) |
+Primeiros passos em POO: da criação de classes até encapsulamento e sobrecarga de métodos.
+
+| Tópico | Conceito praticado | Arquivo |
+|---|---|---|
+| Classes e Objetos | Classe de domínio, instanciação com `new` | [Estudante.java](Aula09/introducaoClasses/dominio/Estudante.java) |
+| Métodos e varargs | Com/sem retorno, parâmetros, `int... num` | [Calculadora.java](Aula09/IntroducaoMetodo/dominio/Calculadora.java) |
+| Valor vs. referência | Mutação de atributo de objeto dentro do método | [EstudanteTeste.java](Aula09/IntroducaoMetodo/teste/EstudanteTeste.java) |
+| Encapsulamento | Atributos `private`, `get`/`set` com validação | [Pessoa.java](Aula09/IntroducaoMetodo/dominio/Pessoa.java) |
+| Array como atributo | Array `private` com `get`/`set` e cálculo de média | [Funcionario.java](Aula09/Exercicio/dominio/Funcionario.java) |
+| Sobrecarga (*overloading*) | Mesmo método, assinaturas diferentes | [Anime.java](Aula09/SobracargaMetodos/dominio/Anime.java) |
+
+Ainda não aborda construtores, herança e interfaces.
+
+</details>
 
 ## 🚀 Como executar
 
@@ -172,9 +165,8 @@ java -cp Aula05 Aula05pt4Ex
 
 ## 🎯 Objetivo
 
-- Fixar os fundamentos da linguagem Java
-- Praticar lógica de programação
-- Construir uma base sólida para tópicos mais avançados (POO, coleções, tratamento de exceções, etc.)
+- Praticar lógica de programação e fixar as particularidades da linguagem Java
+- Construir uma base sólida para tópicos mais avançados (POO, coleções, exceções, Spring Boot)
 
 ## 🗺️ Próximos passos
 
