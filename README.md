@@ -26,7 +26,7 @@ EstudoJava/
 ├── Aula06/   → Estruturas de repetição (while, do-while, for)
 ├── Aula07/   → Arrays (vetores)
 ├── Aula08/   → Arrays multidimensionais (matrizes)
-└── Aula09/   → Introdução a Classes, Objetos e Métodos (POO)
+└── Aula09/   → Classes, Objetos, Métodos, Encapsulamento e Sobrecarga (POO)
 ```
 
 ## 📚 Conteúdo por pasta
@@ -122,9 +122,9 @@ Arrays de duas dimensões (arrays de arrays): declaração, atribuição por ín
 
 ---
 
-### 📁 [Aula09](Aula09/) — Introdução a Classes, Objetos, Métodos e Encapsulamento (POO)
+### 📁 [Aula09](Aula09/) — Classes, Objetos, Métodos, Encapsulamento e Sobrecarga (POO)
 
-Primeiros passos em Programação Orientada a Objetos. Em `introducaoClasses`: criação de classes de domínio com atributos públicos, instanciação de objetos com `new`, atribuição de valores e diferença entre variáveis independentes e referências para o mesmo objeto. Em `IntroducaoMetodo`: criação de métodos (sem retorno, com parâmetros, com retorno de valor e com varargs), método definido na própria classe de domínio, diferença entre passagem de parâmetro por valor (tipos primitivos) e por referência (objetos) — incluindo a mutação de um atributo do objeto dentro do método — e encapsulamento (atributos `private` com métodos `get`/`set`, incluindo validação dentro do `set`). Em `Exercicio`: aplicação prática combinando métodos com array como atributo da classe, também migrado para atributos `private` com `get`/`set`. Organizado em subpacotes `dominio` (classes) e `teste` (classes com `main` que instanciam e usam essas classes).
+Primeiros passos em Programação Orientada a Objetos. Em `introducaoClasses`: criação de classes de domínio com atributos públicos, instanciação de objetos com `new`, atribuição de valores e diferença entre variáveis independentes e referências para o mesmo objeto. Em `IntroducaoMetodo`: criação de métodos (sem retorno, com parâmetros, com retorno de valor e com varargs), método definido na própria classe de domínio, diferença entre passagem de parâmetro por valor (tipos primitivos) e por referência (objetos) — incluindo a mutação de um atributo do objeto dentro do método — e encapsulamento (atributos `private` com métodos `get`/`set`, incluindo validação dentro do `set`). Em `Exercicio`: aplicação prática combinando métodos com array como atributo da classe, também migrado para atributos `private` com `get`/`set`. Em `SobracargaMetodos`: sobrecarga de métodos (overloading) — duas versões de `init` com assinaturas diferentes, uma reaproveitando a outra via `this.init(...)`. Organizado em subpacotes `dominio` (classes) e `teste`/`testes` (classes com `main` que instanciam e usam essas classes).
 
 | Arquivo | Descrição |
 |---|---|
@@ -148,6 +148,8 @@ Primeiros passos em Programação Orientada a Objetos. Em `introducaoClasses`: c
 | [Exercicio/teste/FuncionaTeste.java](Aula09/Exercicio/teste/FuncionaTeste.java) | Instanciação de `Funcionario`, preenchimento dos atributos via `set` (obrigatório após virarem `private`) e chamada dos métodos `imprime()` e `media()` |
 | [IntroducaoMetodo/dominio/Pessoa.java](Aula09/IntroducaoMetodo/dominio/Pessoa.java) | Classe `Pessoa` com atributos `private` (`nome`, `idade`) e métodos `get`/`set`, incluindo validação dentro de `setIdade` para recusar idade negativa |
 | [IntroducaoMetodo/teste/PessoaTeste.java](Aula09/IntroducaoMetodo/teste/PessoaTeste.java) | Instanciação de `Pessoa` via `set`, leitura dos atributos via `get` para montar uma impressão própria (em vez de usar o `imprime()` da classe) |
+| [SobracargaMetodos/dominio/Anime.java](Aula09/SobracargaMetodos/dominio/Anime.java) | Classe `Anime` com atributos `private` e dois métodos `init` sobrecarregados (3 e 4 parâmetros), onde a versão de 4 parâmetros reaproveita a de 3 via `this.init(...)` |
+| [SobracargaMetodos/testes/AnimeTeste.java](Aula09/SobracargaMetodos/testes/AnimeTeste.java) | Instanciação de `Anime` chamando a sobrecarga de `init` com 4 argumentos (nome, tipo, episódios e gênero) |
 
 ## 🚀 Como executar
 
@@ -181,6 +183,7 @@ java -cp Aula05 Aula05pt4Ex
 - [x] Arrays multidimensionais
 - [ ] Programação Orientada a Objetos (classes, atributos, métodos, construtores) — em andamento (classes, atributos e métodos já estudados)
 - [x] Encapsulamento (atributos `private` com `get`/`set` e validação)
+- [x] Sobrecarga de métodos (overloading)
 - [ ] Herança e polimorfismo
 - [ ] Coleções (`List`, `Map`, `Set`)
 - [ ] Tratamento de exceções (`try`/`catch`)
