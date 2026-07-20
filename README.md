@@ -142,6 +142,8 @@ Primeiros passos em POO: da criação de classes até encapsulamento e sobrecarg
 | Construtores | Construtor sobrecarregado, encadeamento com `this(...)` | [Anime.java](Aula09/ConstrutoresMetodos/dominio/Anime.java) |
 | Bloco de inicialização | Bloco `{ }` de instância, executado antes do construtor | [Anime.java](Aula09/BlocosInicializacao/dominio/Anime.java) |
 | Modificador `static` | Atributo, bloco `static{ }` e métodos de classe (compartilhados entre objetos) | [Carro.java](Aula09/ModificadoresEstatico/dominio/Carro.java) |
+| Leitura de dados | `Scanner` para entrada do usuário (`nextLine`, `nextInt`, `next()`) | [LeituraDados01.java](Aula09/LeituraDados/LeituraDados01.java) |
+| Associação entre objetos | Referência "um" (`Jogador`→`Time`) e "muitos" (`Time`→`Jogador[]`), associação bidirecional montada manualmente | [Jogador.java](Aula09/Associacao/dominio/Jogador.java) |
 
 Ainda não aborda herança e interfaces.
 
@@ -180,6 +182,7 @@ java -cp Aula05 Aula05pt4Ex
 - [x] Encapsulamento (atributos `private` com `get`/`set` e validação)
 - [x] Sobrecarga de métodos (overloading)
 - [x] Construtores (sobrecarga de construtores, encadeamento com `this(...)`)
+- [x] Associação entre objetos (referência "um" e "muitos", associação bidirecional)
 - [ ] Herança e polimorfismo
 - [ ] Coleções (`List`, `Map`, `Set`)
 - [ ] Tratamento de exceções (`try`/`catch`)
