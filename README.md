@@ -145,6 +145,7 @@ Primeiros passos em POO: da criação de classes até encapsulamento e sobrecarg
 | Leitura de dados | `Scanner` para entrada do usuário (`nextLine`, `nextInt`, `next()`) | [LeituraDados01.java](Aula09/LeituraDados/LeituraDados01.java) |
 | Associação entre objetos | Referência "um" (`Jogador`→`Time`) e "muitos" (`Time`→`Jogador[]`), associação bidirecional montada manualmente | [Jogador.java](Aula09/Associacao/dominio/Jogador.java) |
 | Herança | `extends`, reaproveitamento de atributos/métodos da classe pai (relação "é um") | [Funcionario.java](Aula09/Herança/dominio/Funcionario.java) |
+| Sobrescrita (*override*) | `@Override` de `toString()`, herdado implicitamente de `Object` | [Anime.java](Aula09/SobreEscrita/dominio/Anime.java) |
 
 Ainda não aborda polimorfismo e interfaces.
 

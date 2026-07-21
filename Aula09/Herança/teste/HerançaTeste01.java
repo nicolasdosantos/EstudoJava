@@ -9,23 +9,24 @@ public class HerançaTeste01 {
         Endereco endereco = new Endereco();
         endereco.setRua("Rua 3");
         endereco.setCep("012345-209");
-        Pessoa pessoa = new Pessoa();
+        Pessoa pessoa = new Pessoa("Toyhisa Shimazu");
 
-        pessoa.setNome("Toyhisa Shimazu");
         pessoa.setCpf("12121212");
         pessoa.setEndereco(endereco);
         pessoa.imprime();
 
-        Funcionario funcionario = new Funcionario();
+        Funcionario funcionario = new Funcionario( "Nicolas ");
 
         // setNome, setCpf, setEndereco e imprime() nao existem escritos em Funcionario.java -
         // sao herdados de Pessoa. So setSalario() e proprio da classe Funcionario
-        funcionario.setNome("Nicolas ");
         funcionario.setCpf("1111111111");
         funcionario.setEndereco(endereco);
         funcionario.setSalario(20000);
 
+        // funcionario.imprime() chama a versao sobrescrita em Funcionario (nao a de Pessoa) -
+        // e o polimorfismo em acao: o Java sempre executa o metodo mais especifico do objeto real
         funcionario.imprime();
+        funcionario.relatorio();
 
     }
 }
