@@ -11,6 +11,18 @@ package Desafios.Encapsulamento;
  */
 public class Desafio01_Medio {
     public static void main(String[] args) {
-        // TODO: implemente sua solução aqui
+        Funcionario funcionario = new Funcionario();
+
+        funcionario.setNome("Nicolas");
+        funcionario.setSalario(-100.00);
+
+        System.out.println(funcionario.getNome());
+        System.out.println(funcionario.getSalario());
+
+        funcionario.setSalario(100.00);
+
+        funcionario.imprime();
+        
+
     }
 }

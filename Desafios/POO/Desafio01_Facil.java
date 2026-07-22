@@ -11,6 +11,20 @@ package Desafios.POO;
  */
 public class Desafio01_Facil {
     public static void main(String[] args) {
-        // TODO: implemente sua solução aqui
+        Filme filme = new Filme();
+        Filme filme2 = new Filme();
+
+
+        filme.titulo = "Transformers";
+        filme.genero = "Ação";
+        filme.duracaoMinutos = 180;
+
+        filme2.titulo = "Vingadores";
+        filme2.genero = "Aventura";
+        filme2.duracaoMinutos = 200;
+
+        filme.imprime();
+        filme2.imprime();
+
     }
 }

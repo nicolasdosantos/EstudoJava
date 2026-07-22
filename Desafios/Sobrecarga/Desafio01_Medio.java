@@ -11,6 +11,11 @@ package Desafios.Sobrecarga;
  */
 public class Desafio01_Medio {
     public static void main(String[] args) {
-        // TODO: implemente sua solução aqui
+        Pedido pedido = new Pedido();
+
+
+        // com 1 argumento chama a versão de 1 parâmetro; com 2, o Java já resolve pra a sobrecarga certa
+        System.out.println(pedido.calcularTotal(100));
+        System.out.println(pedido.calcularTotal(100, 35));
     }
 }

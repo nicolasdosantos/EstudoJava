@@ -11,6 +11,15 @@ package Desafios.Metodos;
  */
 public class Desafio01_Medio {
     public static void main(String[] args) {
-        // TODO: implemente sua solução aqui
+        CalculadoraBanco calculadoraBanco = new CalculadoraBanco();
+
+        double total1 = calculadoraBanco.somarDepositos(0);
+        calculadoraBanco.relatorio("Nicolas", total1);
+
+        double total2 = calculadoraBanco.somarDepositos(100, 50);
+        calculadoraBanco.relatorio("Nicolas", total2);
+        
+        double total3 = calculadoraBanco.somarDepositos(70, 50, 88, 35, 15);
+        calculadoraBanco.relatorio("Nicolas", total3);
     }
 }
