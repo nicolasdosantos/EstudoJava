@@ -5,7 +5,7 @@ Exercícios práticos gerados e corrigidos com o comando `/atividade`, organizad
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/exercícios-19-blue?style=for-the-badge" alt="Exercícios" />
-  <img src="https://img.shields.io/badge/resolvidos-5%2F19-brightgreen?style=for-the-badge" alt="Resolvidos" />
+  <img src="https://img.shields.io/badge/resolvidos-8%2F19-brightgreen?style=for-the-badge" alt="Resolvidos" />
 </p>
 
 ---
@@ -25,14 +25,14 @@ Cada pasta representa um assunto (ex: `Heranca/`, `Encapsulamento/`, `POO/`) e c
 | 03 | Strings e concatenação | 🟢 Fácil | [Aula03/Desafio01_Facil.java](Aula03/Desafio01_Facil.java) |
 | 04 | Operadores | 🟡 Médio | [Aula04/Desafio01_Medio.java](Aula04/Desafio01_Medio.java) |
 | 05 | Condicionais | 🟡 Médio | [Aula05/Desafio01_Medio.java](Aula05/Desafio01_Medio.java) |
+| 06 | Estruturas de repetição | 🟡 Médio | [Aula06/Desafio01_Medio.java](Aula06/Desafio01_Medio.java) |
+| 07 | Arrays | 🟡 Médio | [Aula07/Desafio01_Medio.java](Aula07/Desafio01_Medio.java) |
+| 08 | Arrays multidimensionais | 🟡 Médio | [Aula08/Desafio01_Medio.java](Aula08/Desafio01_Medio.java) |
 
 ### ⏳ Pendentes
 
 | # | Assunto | Nível | Arquivo |
 |---|---|---|---|
-| 06 | Estruturas de repetição | 🟡 Médio | [Aula06/Desafio01_Medio.java](Aula06/Desafio01_Medio.java) |
-| 07 | Arrays | 🟡 Médio | [Aula07/Desafio01_Medio.java](Aula07/Desafio01_Medio.java) |
-| 08 | Arrays multidimensionais | 🟡 Médio | [Aula08/Desafio01_Medio.java](Aula08/Desafio01_Medio.java) |
 | 09 | Classes e Objetos | 🟢 Fácil | [POO/Desafio01_Facil.java](POO/Desafio01_Facil.java) |
 | 10 | Métodos (varargs) | 🟡 Médio | [Metodos/Desafio01_Medio.java](Metodos/Desafio01_Medio.java) |
 | 11 | Encapsulamento | 🟡 Médio | [Encapsulamento/Desafio01_Medio.java](Encapsulamento/Desafio01_Medio.java) |
