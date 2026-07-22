@@ -10,6 +10,29 @@ package Desafios.Aula06;
  */
 public class Desafio01_Medio {
     public static void main(String[] args) {
-        // TODO: implemente sua solução aqui
+
+        double saldo = 100.0;
+        double deposito = 50.0;
+        double meta = 500.0;
+
+        // Somando depósitos até atingir a meta ou completar 10 rodadas
+        for (int rodada = 1; rodada <= 10; rodada++) {
+            saldo += deposito;
+
+            System.out.println("Rodada " + rodada + " - Saldo: R$ " + saldo);
+
+            if (saldo >= meta) {
+                System.out.println("Meta atingida!");
+                break;
+            }
+        }
+
+        // Simulando uma tentativa de senha
+        int tentativa = 1;
+
+        do {
+            System.out.println("Tentativa de senha: " + tentativa);
+            tentativa++;
+        } while (tentativa <= 1);
     }
 }
