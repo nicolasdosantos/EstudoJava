@@ -1,44 +1,37 @@
 # ☕ Aula 03 — Strings e Concatenação
 
-> Concatenação de `String` com outros tipos (double, texto) para montar uma frase única.
+*Fundamentos · Curso Java (DevDojo)*
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/status-Conclu%C3%ADda-brightgreen?style=flat-square" alt="Status" />
-  <img src="https://img.shields.io/badge/curso-DevDojo-blue?style=flat-square" alt="Curso" />
-  <img src="https://img.shields.io/badge/categoria-Fundamentos-lightgrey?style=flat-square" alt="Categoria" />
-</p>
+> Registro pessoal dessa aula, escrito por mim mesmo — do jeito que eu realmente pensei sobre o assunto enquanto estudava, não uma ficha técnica genérica.
+
+| Status | Categoria | Progresso na trilha |
+|---|---|---|
+| ✅ Concluída | Fundamentos | 73% |
 
 ---
 
-## 📖 Visão Geral
+## 💭 Antes dessa aula
 
-Aula de prática sobre `String` em Java: como concatenar texto com outros tipos primitivos/objetos (`double`, `String`) usando o operador `+` para montar uma única frase de saída. Base para qualquer geração de mensagens, logs ou textos dinâmicos em aplicações Java.
+Essa aula foi de prática direta em cima da Aula02 — inclusive deixei isso registrado num comentário no próprio código (`// Aula de pratica das informações da aula 02`). A ideia era pegar os tipos que eu tinha acabado de estudar e usar todos juntos numa `String` só.
 
-## 🎯 Objetivos de Aprendizagem
+---
 
-- Strings e concatenação — Aula03
+## 📖 O que eu estudei
 
-## 🧠 Conceitos Estudados
+Concatenar `String` com outros tipos usando o operador `+` pra montar uma frase única de saída. Vi na prática que o `+` não exige que os dois lados sejam `String` — quando um dos lados é `String`, o Java converte automaticamente o outro lado (no meu caso, um `double`) pra texto antes de juntar tudo.
 
-| Conceito | Explicação |
+---
+
+## 🧠 Conceitos que ficaram comigo
+
+| Conceito | O que entendi |
 |---|---|
-| `String` | Tipo usado para armazenar texto (`nome`, `endereco`, `data`) |
-| Concatenação com `+` | Junta `String` com outro `String` ou com tipo primitivo (`double salario`) em uma única frase, com conversão implícita para texto |
+| `String` | Tipo usado pra armazenar texto (nome, endereço, data) |
+| Concatenação com `+` | Junta `String` com `String` ou com tipo primitivo (`double`) numa frase só, convertendo implicitamente pra texto |
 
-## 📂 Estrutura da Aula
+---
 
-```text
-Aula03/Aula03.java
-```
-
-## 📄 Arquivos Importantes
-
-| Arquivo | Finalidade |
-|---|---|
-| [Aula03.java](Aula03.java) | Declara variáveis `String` e `double` e concatena tudo em uma frase única via `System.out.println` |
-
-## 💻 Trechos de Código Importantes
+## 💻 O trecho que eu quero guardar
 
 ```java
 String nome = "Nicolas";
@@ -46,40 +39,52 @@ double salario = 1500.00;
 System.out.println("Eu " + nome + ", ... confrimo que recebi o salário de " + salario + ", na data " + data);
 ```
 
-O `+` concatena `String` com `String` e com `double` na mesma expressão — o `double` é convertido automaticamente para texto durante a concatenação.
+Esse é o meu código real dessa aula: uma `String` monta a frase final concatenando texto com uma variável `double` (`salario`), que o Java converte automaticamente pra texto nessa operação.
 
-## ⚠️ Erros Comuns
+---
 
-- Erro de digitação identificado no próprio código desta aula: `"confrimo"` no lugar de `"confirmo"` — comum em strings literais grandes escritas de uma vez, sem revisão.
+## ✅ O que eu levo dessa aula
 
-## ✅ Boas Práticas
+- Pra frases longas com várias variáveis, prefiro `String.format` ou text blocks a encadear muitos `+` — fica mais legível e mais fácil de revisar.
+- Revisar a frase final de saída antes de considerar o programa pronto, principalmente quando ela é montada por concatenação longa.
 
-- Preferir `String.format` ou text blocks para frases longas com várias variáveis, em vez de encadear muitos `+` — fica mais legível e menos sujeito a erro de digitação como o encontrado acima.
+---
 
-## 📌 Resumo
+## 📌 O que eu já sei fazer sozinho
 
-Após esta aula, o autor já é capaz de concatenar `String` com outros tipos primitivos para montar mensagens de saída dinâmicas em Java.
+Depois dessa aula, eu já sou capaz de concatenar `String` com outros tipos primitivos pra montar mensagens de saída dinâmicas em Java.
 
-## 🏆 Exercícios Relacionados
+---
+
+## 🏆 Exercício que eu resolvi
 
 | Exercício | Dificuldade | Nota |
 |---|---|---|
 | [Desafio01_Facil.java](../Desafios/Aula03/Desafio01_Facil.java) | 🟢 Fácil | — |
 
-## 📚 Referências
+---
+
+## 📂 Arquivos dessa aula
+
+```text
+Aula03/
+└── Aula03.java
+```
+
+---
+
+## 🔗 O que eu estudo a seguir
+
+➡️ **Aula04** — Operadores (aritméticos, relacionais, lógicos, atribuição)
+
+---
+
+## 📚 Onde eu fui buscar mais
 
 - [Java Tutorials — Oracle](https://docs.oracle.com/javase/tutorial/)
 - [Java Language Specification](https://docs.oracle.com/javase/specs/)
 - Curso Java — DevDojo
 
-## 📈 Evolução
+---
 
-```
-Java Core
-
-███████████████░░░░░ 73%
-```
-
-## 🔗 Próximo Conteúdo
-
-➡️ Polimorfismo
+*Escrito por mim, Nicolas, enquanto estudava essa aula.* ✍️
