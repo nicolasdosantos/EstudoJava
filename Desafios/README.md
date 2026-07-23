@@ -5,7 +5,7 @@ Exercícios práticos gerados e corrigidos com o comando `/atividade`, organizad
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/exercícios-19-blue?style=for-the-badge" alt="Exercícios" />
-  <img src="https://img.shields.io/badge/resolvidos-13%2F19-brightgreen?style=for-the-badge" alt="Resolvidos" />
+  <img src="https://img.shields.io/badge/resolvidos-14%2F19-brightgreen?style=for-the-badge" alt="Resolvidos" />
 </p>
 
 ---
@@ -33,12 +33,12 @@ Cada pasta representa um assunto (ex: `Heranca/`, `Encapsulamento/`, `POO/`) e c
 | 11 | Encapsulamento | 🟡 Médio | [Encapsulamento/Desafio01_Medio.java](Encapsulamento/Desafio01_Medio.java) |
 | 12 | Sobrecarga de métodos | 🟡 Médio | [Sobrecarga/Desafio01_Medio.java](Sobrecarga/Desafio01_Medio.java) |
 | 13 | Construtores | 🟡 Médio | [Construtores/Desafio01_Medio.java](Construtores/Desafio01_Medio.java) |
+| 14 | Bloco de inicialização | 🟡 Médio | [BlocosInicializacao/Desafio01_Medio.java](BlocosInicializacao/Desafio01_Medio.java) |
 
 ### ⏳ Pendentes
 
 | # | Assunto | Nível | Arquivo |
 |---|---|---|---|
-| 14 | Bloco de inicialização | 🟡 Médio | [BlocosInicializacao/Desafio01_Medio.java](BlocosInicializacao/Desafio01_Medio.java) |
 | 15 | Modificador static | 🟡 Médio | [ModificadoresEstatico/Desafio01_Medio.java](ModificadoresEstatico/Desafio01_Medio.java) |
 | 16 | Leitura de dados (Scanner) | 🟢 Fácil | [LeituraDados/Desafio01_Facil.java](LeituraDados/Desafio01_Facil.java) |
 | 17 | Associação entre objetos | 🟡 Médio | [Associacao/Desafio01_Medio.java](Associacao/Desafio01_Medio.java) |
