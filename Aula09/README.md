@@ -28,6 +28,9 @@ Aula09 concentra toda a introdução a Orientação a Objetos em Java: classes, 
 - Leitura de dados via `Scanner`
 - Associação entre objetos
 - Herança
+- Sobrescrita de métodos (`@Override`)
+- Enumerações (`enum`)
+- Modificador `final`
 
 ## 🧠 Conceitos Estudados
 
@@ -44,6 +47,8 @@ Aula09 concentra toda a introdução a Orientação a Objetos em Java: classes, 
 | Associação | Referência "um" e "muitos" entre objetos, bidirecional quando setada nos dois lados |
 | Herança (`extends`) | Relação "é um", reaproveitamento de atributos/métodos da superclasse via `super` |
 | Sobrescrita (`@Override`) | Redefinição de comportamento herdado na subclasse |
+| Enumerações (`enum`) | Tipo com um conjunto fixo e conhecido de valores, validado pelo compilador |
+| Modificador `final` | Em classe (bloqueia herança), em atributo `static` (blank final) e em referência de objeto (trava a troca, não a mutação) |
 
 ## 📂 Estrutura da Aula
 
@@ -59,7 +64,9 @@ Aula09/
 ├── LeituraDados/
 ├── Associacao/
 ├── Herança/
-└── SobreEscrita/
+├── SobreEscrita/
+├── Enumeracao/
+└── ModificadorFinal/
 ```
 
 ## 📄 Arquivos Importantes
@@ -77,6 +84,8 @@ Aula09/
 | [Associacao/README.md](Associacao/README.md) | Associação entre Objetos |
 | [Herança/README.md](Herança/README.md) | Relação "é um" entre Funcionario e Pessoa |
 | [SobreEscrita/README.md](SobreEscrita/README.md) | Sobrescrita (`@Override`) |
+| [Enumeracao/README.md](Enumeracao/README.md) | Enumerações (`enum`) |
+| [ModificadorFinal/README.md](ModificadorFinal/README.md) | Modificador `final` |
 
 ## 💻 Trechos de Código Importantes
 
@@ -93,22 +102,24 @@ Encadeamento de construtores em `ConstrutoresMetodos`: o construtor de 5 parâme
 
 ```text
 Classes/Objetos → Métodos → Encapsulamento → Sobrecarga → Construtores →
-Blocos/static → Scanner → Associação → Herança → Sobrescrita
+Blocos/static → Scanner → Associação → Herança → Sobrescrita → Enum/final
 ```
 
 ## ⚠️ Erros Comuns
 
 - Construtor vazio implícito deixa de existir assim que a classe define um construtor próprio (causou erro de compilação real durante `ConstrutoresMetodos`).
 - Atributos `private` da superclasse continuam inacessíveis direto na subclasse, mesmo com `extends` — só via `get`/`set` herdados.
+- Declarar um `enum` como `class` (escrevendo os valores soltos, tipo `pessoa_fisica, pessoa_juridica`, dentro de `public class`) não compila — essa sintaxe só é válida dentro de `enum` (erro real corrigido em `Enumeracao/TipoCliente.java`). Junto com isso veio um segundo erro de tipo: o construtor de `Cliente` esperava `String`, mas o teste já passava um valor do `enum`.
 
 ## ✅ Boas Práticas
 
 - Preferir encapsulamento (`private` + `get`/`set` com validação) a atributos `public`.
 - Reaproveitar construtores/métodos sobrecarregados via `this(...)` em vez de duplicar atribuições.
+- Usar `enum` em vez de constantes `String`/`int` para representar um conjunto fixo de valores — o compilador impede valor inválido, algo que uma constante solta não garante.
 
 ## 📌 Resumo
 
-Ao final da Aula09, já é possível modelar classes de domínio completas: com atributos encapsulados, construtores sobrecarregados, métodos estáticos e de instância, leitura de dados do usuário, associações entre objetos e herança com sobrescrita de comportamento.
+Ao final da Aula09, já é possível modelar classes de domínio completas: com atributos encapsulados, construtores sobrecarregados, métodos estáticos e de instância, leitura de dados do usuário, associações entre objetos, herança com sobrescrita de comportamento, tipos com valores fixos via `enum` e uso de `final` para travar herança, atribuição única (blank final) e reatribuição de referência.
 
 ## 🏆 Exercícios Relacionados
 
@@ -137,7 +148,7 @@ Ao final da Aula09, já é possível modelar classes de domínio completas: com 
 ```
 Java Core
 
-███████████████░░░░░ 73%
+███████████████░░░░░ 75%
 ```
 
 ## 🔗 Próximo Conteúdo
