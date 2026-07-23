@@ -5,7 +5,7 @@ Exercícios práticos gerados e corrigidos com o comando `/atividade`, organizad
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/exercícios-19-blue?style=for-the-badge" alt="Exercícios" />
-  <img src="https://img.shields.io/badge/resolvidos-8%2F19-brightgreen?style=for-the-badge" alt="Resolvidos" />
+  <img src="https://img.shields.io/badge/resolvidos-13%2F19-brightgreen?style=for-the-badge" alt="Resolvidos" />
 </p>
 
 ---
@@ -28,16 +28,16 @@ Cada pasta representa um assunto (ex: `Heranca/`, `Encapsulamento/`, `POO/`) e c
 | 06 | Estruturas de repetição | 🟡 Médio | [Aula06/Desafio01_Medio.java](Aula06/Desafio01_Medio.java) |
 | 07 | Arrays | 🟡 Médio | [Aula07/Desafio01_Medio.java](Aula07/Desafio01_Medio.java) |
 | 08 | Arrays multidimensionais | 🟡 Médio | [Aula08/Desafio01_Medio.java](Aula08/Desafio01_Medio.java) |
-
-### ⏳ Pendentes
-
-| # | Assunto | Nível | Arquivo |
-|---|---|---|---|
 | 09 | Classes e Objetos | 🟢 Fácil | [POO/Desafio01_Facil.java](POO/Desafio01_Facil.java) |
 | 10 | Métodos (varargs) | 🟡 Médio | [Metodos/Desafio01_Medio.java](Metodos/Desafio01_Medio.java) |
 | 11 | Encapsulamento | 🟡 Médio | [Encapsulamento/Desafio01_Medio.java](Encapsulamento/Desafio01_Medio.java) |
 | 12 | Sobrecarga de métodos | 🟡 Médio | [Sobrecarga/Desafio01_Medio.java](Sobrecarga/Desafio01_Medio.java) |
 | 13 | Construtores | 🟡 Médio | [Construtores/Desafio01_Medio.java](Construtores/Desafio01_Medio.java) |
+
+### ⏳ Pendentes
+
+| # | Assunto | Nível | Arquivo |
+|---|---|---|---|
 | 14 | Bloco de inicialização | 🟡 Médio | [BlocosInicializacao/Desafio01_Medio.java](BlocosInicializacao/Desafio01_Medio.java) |
 | 15 | Modificador static | 🟡 Médio | [ModificadoresEstatico/Desafio01_Medio.java](ModificadoresEstatico/Desafio01_Medio.java) |
 | 16 | Leitura de dados (Scanner) | 🟢 Fácil | [LeituraDados/Desafio01_Facil.java](LeituraDados/Desafio01_Facil.java) |
