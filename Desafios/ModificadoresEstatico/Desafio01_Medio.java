@@ -11,7 +11,18 @@ package Desafios.ModificadoresEstatico;
  * imprima o total pelo método estático (nunca pelo objeto).
  */
 public class Desafio01_Medio {
+
     public static void main(String[] args) {
-        // TODO: implemente sua solução aqui
+
+        Conta conta1 = new Conta("Nicolas");
+        Conta conta2 = new Conta("Maria");
+        Conta conta3 = new Conta("João");
+
+        // chamado direto pelo nome da classe (Conta.getTotalContasAbertas()), nunca
+        // por conta1.getTotalContasAbertas() - membro static nao depende de nenhum
+        // objeto especifico pra existir, entao acessar via instancia so confunde
+        // sobre o que de fato esta sendo compartilhado
+        System.out.println("Total de contas: " + Conta.getTotalContasAbertas());
+        System.out.println("Taxa de manutenção: R$ " + Conta.TAXA_MANUTENCAO);
     }
 }

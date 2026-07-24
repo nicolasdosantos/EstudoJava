@@ -11,6 +11,23 @@ package Desafios.Associacao;
  */
 public class Desafio01_Medio {
     public static void main(String[] args) {
-        // TODO: implemente sua solução aqui
+        Turma turma = new Turma("3º Ano Médio B");
+
+        Aluno aluno1 = new Aluno("Nicolas");
+        Aluno aluno2 = new Aluno("Miguel");
+        Aluno aluno3 = new Aluno("Thiago");
+
+        Aluno[] alunos = {aluno1,aluno2,aluno3};
+
+        turma.setAlunos(alunos);
+
+        // associação dos dois lados feita na mão, igual JogadorTeste03 da Aula09 - setar
+        // turma.setAlunos(...) nao faz o aluno saber sua turma sozinho, cada referência
+        // precisa ser setada separadamente
+        aluno1.setTurma(turma);
+        aluno2.setTurma(turma);
+        aluno3.setTurma(turma);
+
+        turma.imprime();
     }
 }

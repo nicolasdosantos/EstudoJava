@@ -47,7 +47,7 @@ Aula09 concentra toda a introdução a Orientação a Objetos em Java: classes, 
 | Associação | Referência "um" e "muitos" entre objetos, bidirecional quando setada nos dois lados |
 | Herança (`extends`) | Relação "é um", reaproveitamento de atributos/métodos da superclasse via `super` |
 | Sobrescrita (`@Override`) | Redefinição de comportamento herdado na subclasse |
-| Enumerações (`enum`) | Tipo com um conjunto fixo e conhecido de valores, validado pelo compilador |
+| Enumerações (`enum`) | Tipo com um conjunto fixo e conhecido de valores, validado pelo compilador; pode ter construtor (código associado a cada constante) e ser aninhado dentro de outra classe |
 | Modificador `final` | Em classe (bloqueia herança), em atributo `static` (blank final) e em referência de objeto (trava a troca, não a mutação) |
 
 ## 📂 Estrutura da Aula
@@ -110,6 +110,7 @@ Blocos/static → Scanner → Associação → Herança → Sobrescrita → Enum
 - Construtor vazio implícito deixa de existir assim que a classe define um construtor próprio (causou erro de compilação real durante `ConstrutoresMetodos`).
 - Atributos `private` da superclasse continuam inacessíveis direto na subclasse, mesmo com `extends` — só via `get`/`set` herdados.
 - Declarar um `enum` como `class` (escrevendo os valores soltos, tipo `pessoa_fisica, pessoa_juridica`, dentro de `public class`) não compila — essa sintaxe só é válida dentro de `enum` (erro real corrigido em `Enumeracao/TipoCliente.java`). Junto com isso veio um segundo erro de tipo: o construtor de `Cliente` esperava `String`, mas o teste já passava um valor do `enum`.
+- Ao dar construtor pro `enum`, a lista de constantes precisa terminar com `;` (`pessoa_fisica(1), pessoa_juridica(2);`) — sem o `;`, o Java não sabe onde termina a lista de valores e começa o corpo da classe (atributo/construtor/método).
 
 ## ✅ Boas Práticas
 
